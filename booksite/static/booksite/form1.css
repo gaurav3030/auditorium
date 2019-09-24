@@ -1,0 +1,169 @@
+
+body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    height: 50px;
+    
+}
+.Header{
+    height: 50px;
+    background-color: #000;
+}
+.inner-header{
+    width: 80%;
+    margin: auto;
+}
+.logo{
+    float: left;
+    padding: 15px;
+    
+}
+.logo img{
+    height: 120px;
+}
+.logo a{
+    color: #fff;
+    height: 50px;
+    font-size: 20px;
+}
+.head-link{
+    float: right;
+    padding: 10px;
+    font-size: 15px;
+    margin: 10px;  
+    height: 50PX;
+    color: white;
+}
+.up{
+    font-size: 20px;
+    padding: 20PX;
+    margin-top: 50PX;
+}
+
+.content{
+    min-height: 400px;
+    background: url(img/infra-learn-audi.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 10%;
+    
+}
+.content-data{
+    background-color: rgba(0,0,0,0.7);
+    width: 50%;
+    margin: auto;
+    height: 300px;
+}
+.data{
+    padding-top: 12px;
+    text-align: center;
+    color: #fff;
+    font-size: 30PX;
+    padding: 80PX;
+}
+
+.container{
+    float:right;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+.my-form{
+    text-align:center;
+    width:80%;
+    margin:auto;
+    padding: 40px;
+    color:black;
+    border:3px black solid;
+    font-size:28px;
+    background-color: white;
+    }
+.form_group{
+    padding-bottom:15px;
+}
+.get{
+    text-align: center;
+}
+p{
+    text-align: center;
+    border: 1px black solid;
+    background-color: coral;
+    color: white;
+    -webkit-border-radius: 20px;
+    width: 60%;
+}
+.small{
+    font-size: 12px;
+}
+.get{
+    padding-left: 350px;
+}
+.my-form label{
+}
+input[type="text"],input[type="number"],input[type="email"]{
+    width: 75%;
+
+}
+.button{
+background-color:black;
+padding:10px;
+color:white;
+font-family: Garamond, Georgia;
+    font-size:18px;
+    border:none;
+    font-weight: bold;
+    float:center;
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+}
+.button:hover{
+background-color:green;
+color:black;
+}
+a{
+text-decoration:none;
+color:black;
+}
+a.hover{
+color:blue;
+}
+a.active{
+color:green;
+}
+a.visited{
+color:purple;
+}
+.sub{
+
+}
+input[type=submit],input[type=button] {
+
+  border: 1px dotted #999;
+  border-radius: 0;
+  -webkit-border-radius: 10px;
+  appearance: none;
+  cursor:pointer;
+} 
+input[type=text] {
+      size: 24px;
+  border: 1px solid #999;
+    border-radius: 3;
+  -webkit-border-radius: 10px;
+  appearance: none;
+}
+input[type=date],input[type=email],input[type=number] {
+  border: 1px solid #999;
+    border-radius: 3;
+  -webkit-border-radius: 10px;
+  appearance: none;
+}
+.footer{
+    text-align: right;
+}

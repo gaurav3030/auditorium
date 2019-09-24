@@ -1,0 +1,132 @@
+body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    height: 50px;
+    
+}
+ul{
+    list-style-type: none;
+    
+    font-size: 25px;
+}
+.Header{
+    height: 50px;
+    background-color: #000;
+}
+.inner-header{
+    width: 80%;
+    margin: auto;
+}
+.logo{
+    float: left;
+    padding: 15px;
+    
+}
+.logo img{
+    height: 120px;
+}
+.logo a{
+    color: #fff;
+    height: 50px;
+    font-size: 20px;
+}
+.head-link{
+    float: right;
+    padding: 10px;
+    font-size: 15px;
+    margin: 10px;  
+    height: 50PX;
+}
+.up{
+    font-size: 20px;
+    padding: 20PX;
+    margin-top: 50PX;
+}
+
+.content{
+    min-height: 400px;
+    background: url(img/infra-learn-audi.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 10%;
+    
+}
+.content-data{
+    background-color: rgba(0,0,0,0.7);
+    width: 50%;
+    margin: auto;
+    height: 300px;
+    
+}
+.data{
+    padding-top: 12px;
+    text-align: center;
+    color: #fff;
+    font-size: 30PX;
+    padding: 80PX;
+}
+.catalog{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 50px;
+}
+.items{
+    width: 30%;
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    float: left;
+    margin-left: 1%;padding: 20px;
+}
+
+.loc-con{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 50px;
+    text-align: center;
+}
+.locd{
+     width: 80%;
+    display: block;
+    padding: 4px;
+    
+    margin-bottom: 20px;
+    line-height: 1.42;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    float: left;
+    margin-left: 7%;
+}
+
+
+.form{
+    background-color: aliceblue;
+    
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 50px;  
+    text-align: center;
+    padding-bottom: 20px;
+}
+footer{
+    background-color: #000;
+    color:#fff;
+    font-size: 14px;
+    text-align: center;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link href="/static/booksite/form1.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="Header">
+        <div class="inner-header">
+            <div class="logo">
+                <a href="#" class="up">LOGO</a>
+            </div>
+            <div class="head-link">
+                
+                <a href="#" class="up" style="color: white">Contact Us</a>
+                
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-data">
+            <div class="data">
+                <h1>VESIT</h1>
+            </div>
+        </div>
+    </div>
+    
+    <form class="my-form" method="post" action="">
+               {% csrf_token %}
+                <div class="form_group">
+                    <label>Venue: </label>
+                    <input type="text" name="venue">
+                </div>
+                <div class="form_group">
+                    <label>Date: </label>
+                    <input type="date" name="date">
+                </div>
+                 <div class="form_group">
+                    <label>Time: </label>
+                    <select name="time">
+                        <option value="First Half">First Half</option>
+                        <option value="Seond Half">Second Half</option>
+                        <option value="Full Day">Full Day</option>
+                    </select>
+                    <br>
+                        <input type="button" value="Check Availability" class="button" name="ca" onclick="checkavail">
+                </div>
+                <div class="form_group">
+                    <label>College Name:</label>
+                    <select name="clg">
+                            <option value="VES College of Arts,Science and Commerce">VES College of Arts,Science and Commerce</option>
+                            <option value="VES College of Architecture">VES College of Architecture</option>
+                            <option value="VES Institute of Technology">VES Institute of Technology</option>
+                            <option value="VES College of Pharmacy">VES College of Pharmacy</option>
+                            <option value="VES College of Law">VES College of Law</option>
+                            <option value="VES Institute of Management">VES Institute of Management</option>
+                        </select>
+                </div>
+                <div class="form_group">
+                    <label>VES E-mail ID: </label>
+                    <input type="email" name="email">
+                </div>
+                <div class="form_group">
+                    <label>Booking Purpose:</label>
+                    <textarea name="message"></textarea>
+                </div>
+               
+                   <input type="submit" value="Confirm Booking" class="button" name="_book">
+            </form>
+</body>
+</html>
+
+               
+
+               
+               
+               
+               
+               
+               
+               
+               
