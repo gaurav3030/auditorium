@@ -27,7 +27,11 @@
             </div>
         </div>
     </div>
-    
+    {% for message in messages %}
+    <li class="{{ message.tags }}">
+    {% if 'safe' in message.tags %}{{ message|safe }}{% else %}{{ message }}{% endif %}
+    </li>
+    {% endfor %}
     <form class="my-form" method="post" action="">
                {% csrf_token %}
                 <div class="form_group">
@@ -46,7 +50,12 @@
                         <option value="Full Day">Full Day</option>
                     </select>
                     <br>
-                        <input type="button" value="Check Availability" class="button" name="ca" onclick="checkavail">
+                        <input type="button" value="Check Availability" class="button" name="_ca" onclick="checkavail">
+                        {% for message in messages %}
+                            <li class="{{ message.tags }}">
+                                {% if 'safe' in message.tags %}{{ message|safe }}{% else %}{{ message }}{% endif %}
+                            </li>
+                        {% endfor %}
                 </div>
                 <div class="form_group">
                     <label>College Name:</label>

@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import booking
+from django.contrib import messages
 # Create your views here.
 def homepage(request):
     return render(request = request,
@@ -15,7 +16,7 @@ def bookform(request):
 def bookform(request):
    
     if request.method == 'POST':
-        if 'ca' in request.POST:
+        if '_ca' in request.POST:
             if request.POST.get('venue') and request.POST.get('date') and request.POST.get('time'):
                 
                 a=0
@@ -25,9 +26,9 @@ def bookform(request):
                             if reserve.time==request.POST.get('time') :
                                 a=1
                 if a==1 :
-                    messages.info(request,'time slot not availabe.')
-                else :
-                    messages.info(request,'time slot available. plese proceed.')
+                    messages.info(request,'time slot not availabe.',extra_tags='safe')
+                else :s
+                    messages.info(request,'time slot available. plese proceed.',extra_tags='safe')
                 
         elif '_book' in request.POST:
             if request.POST.get('venue') and request.POST.get('date') and request.POST.get('time') and request.POST.get('clg') and request.POST.get('email') and request.POST.get('message'):
@@ -43,3 +44,14 @@ def bookform(request):
                 return render(request, 'booksite/home.html')
     else:
             return render(request,'booksite/bookform.html')
+
+def forma(request):
+    if request.method == 'POST':
+        if request.POST.get('email') and request.POST.get('id'):
+                
+                cBOOK=booking.objects.get(id = request.POST.get('id'))
+                if cBOOK.approve == 'Pending' :
+                    messages.info(request,'time slot not availabe.')
+                else :
+                    messages.info(request,'time slot available. plese proceed.')
+        
