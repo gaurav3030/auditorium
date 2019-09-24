@@ -5,27 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     
-    <link href="/static/booksite/home1.css" rel="stylesheet">
+    <link rel="stylesheet" href="home1.css">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="css/materialize.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="js/materialize.js"></script>
 </head>
 
 <body>
-   
-    <div class="Header">
-        <div class="inner-header">
-            <div class="logo">
-                <a href="#" class="up">LOGO</a>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="black nav-wrapper">
+              <a href="#" class="brand-logo">Logo</a>
+                 <ul id="nav-mobile" class= "right hide-on-med-and-down">
+                   <li><a href="#" class="up">Check Approval</a></li>    
+                  <li><a href="#">Check Availability</a></li>
+                  <li><a href="#">Book</a></li>
+                  <li><a href="#">Check Approval</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                 </ul>
             </div>
-            <div class="head-link">
-                <a href="#" class="up">Check Approval</a>
-                <a href="#" class="up">Check Availability</a>
-                <a href="/book" class="up">Book</a>
-                <a href="#" class="up">Contact Us</a>
-                
-            </div>
-        </div>
+        </nav>
     </div>
     
-    <div class="content">
+     <div class="content">
         <div class="content-data">
             <div class="data">
                 <h1>VESIT</h1>
@@ -34,12 +38,15 @@
     </div>
     <div class="loc-con">
         <div class="locd">
-            <p>The seminar hall in the college is equipped with the latest Audio and Visual equipments for the conduct of Presentations, Seminars and personality development workshops.It is fully air conditioned, and fully equipped with state-of-the-art audio-visual devices providing services such as video conferencing, a sound system and audio-visual material. It has the capacity for accommodating 180 persons.</p>
+            <p>The seminar hall in the college is equipped with the latest Audio and Visual equipments for the conduct of Presentations, Seminars and personality development workshops.It is fully air conditioned, and fully equipped with state-of-the-art audio-visual devices providing services such as video conferencing, a sound system and audio-visual material. It has the capacity for accommodating 300 persons.</p>
         </div>
         
     </div>
-    <div class="catalog">
-        <div class="items">
+    <div class="row">
+        <div class= "col m4">
+            <div class="grey">
+                <div class="card content">
+                    <p><b>Check Availability</b></p>
             <form>
                 Date:-<input type="date"><br>
                 time: - <input type="text"><br>
@@ -48,26 +55,28 @@
                 <a href="#" class="ca">Check Availability</a>
             </form>
         </div>
-        <div class="items">
-            <a href="#">
-                <img src="img/shirt.jpg" class="thumbnail">
-                <div class="caption">
-                    <h2>equipment</h2>
-                    <p>about equipment</p>
+    </div>
+</div>
+      <div class=" col m4">
+               <div class="grey">
+                   <div class="card content">
+                       <p>Book our spacious auditorium according to your expected capacity and desired requirements.</p>
+
+                   </div>
+               </div>
+           </div>
+       
+       <div class=" col m4">
+            <div class="grey">
+                <div class="card content">
+                    <p>content</p>
+
                 </div>
-            </a>
-        </div>
-        <div class="items">
-            <a href="#">
-                <img src="img/watch.jpg"class="thumbnail">
-                <div class="caption">
-                    <h2>equipment</h2>
-                    <p>about equipment</p>
-                </div>
-            </a>
+            </div>
         </div>
     </div>
-    
+        
+    <div class="divider"></div>
     
     <footer>
         <div class="container">
